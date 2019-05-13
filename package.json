@@ -36,6 +36,6 @@
     "postcss-selector-parser": "^2.2.3"
   },
   "peerDependencies": {
-    "stylelint": "^9.x || ^10.x"
+    "stylelint": "9.x || 10.x"
   }
 }
