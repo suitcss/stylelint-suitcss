@@ -20,19 +20,21 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint rules utils",
-    "pretest": "npm run lint",
+    "pretest": "yarn lint",
     "test": "ava index.test.js **/test/*.js"
   },
   "author": "Simon Smith",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.18.2",
-    "eslint": "^3.16.1",
+    "ava": "^3.15.0",
+    "eslint": "^7.32.0",
     "stylelint-test-rule-ava": "^0.2.0"
   },
   "dependencies": {
     "lodash.find": "^4.6.0",
-    "postcss-selector-parser": "^2.2.3",
-    "stylelint": "^9.0.0"
+    "postcss-selector-parser": "^6.0.6"
+  },
+  "peerDependencies": {
+    "stylelint": "^13.13.1"
   }
 }
