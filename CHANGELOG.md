@@ -1,5 +1,7 @@
 ### HEAD
 
+### 4.0.0 (August 3, 2021)
+
 * Update `stylelint` to `^13.13.1`
 * Update `postcss-selector-parser` to `^6.0.6`
 * Update `eslint` to `^7.32.0`
