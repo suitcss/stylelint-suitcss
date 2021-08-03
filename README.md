@@ -1,6 +1,6 @@
 # stylelint-suitcss
 
-[![NPM version](http://img.shields.io/npm/v/stylelint-suitcss.svg)](https://www.npmjs.org/package/stylelint-suitcss) [![Build Status](https://github.com/suitcss/stylelint-suitcss/actions/workflows/ci.yml/badge.svg)](https://github.com/suitcss/stylelint-suitcss/actions/workflows/ci.yml)
+[![NPM version](http://img.shields.io/npm/v/stylelint-suitcss.svg)](https://www.npmjs.com/package/stylelint-suitcss) [![Build Status](https://github.com/suitcss/stylelint-suitcss/actions/workflows/ci.yml/badge.svg)](https://github.com/suitcss/stylelint-suitcss/actions/workflows/ci.yml)
 
 A collection of [stylelint](https://stylelint.io/) plugins for SUIT CSS.
 
