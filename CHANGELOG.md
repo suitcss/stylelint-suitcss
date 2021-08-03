@@ -1,5 +1,10 @@
 ### HEAD
 
+* Update `stylelint` to `^13.13.1`
+* Update `postcss-selector-parser` to `^6.0.6`
+* Update `eslint` to `^7.32.0`
+* Update `ava` to `^3.15.0`
+
 ### 3.0.0 (February 24, 2018)
 
 * Update `stylelint` to `^9.0.0` - Note this drops support for Node 4
