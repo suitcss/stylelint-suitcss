@@ -8,28 +8,30 @@ const messages = stylelint.utils.ruleMessages(ruleName, {
   rejected: 'Unexpected composition',
 });
 
-function rule(actual) {
-  return (root, result) => {
-    const validOptions = stylelint.utils.validateOptions(result, ruleName, {actual});
-    if (!validOptions) {
-      return;
-    }
-
-    root.walkRules(rule => {
-      if (rule.selector.toLowerCase().indexOf(':root') === -1 || rule.selector.toLowerCase().trim() === ':root') {
+module.exports = stylelint.createPlugin(
+  ruleName,
+  function(actual) {
+    return (root, result) => {
+      const validOptions = stylelint.utils.validateOptions(result, ruleName, {actual});
+      if (!validOptions) {
         return;
       }
 
-      stylelint.utils.report({
-        message: messages.rejected,
-        node: rule,
-        result,
-        ruleName,
-      });
-    });
-  };
-}
+      root.walkRules(rule => {
+        if (rule.selector.toLowerCase().indexOf(':root') === -1 || rule.selector.toLowerCase().trim() === ':root') {
+          return;
+        }
 
-rule.ruleName = ruleName;
-rule.messages = messages;
-module.exports = rule;
+        stylelint.utils.report({
+          message: messages.rejected,
+          node: rule,
+          result,
+          ruleName,
+        });
+      });
+    };
+  }
+);
+
+module.exports.ruleName = ruleName;
+module.exports.messages = messages;

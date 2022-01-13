@@ -1,12 +1,9 @@
 'use strict';
 
-const testRule = require('stylelint-test-rule-ava');
-const rule = require('..');
+const {ruleName, messages} = require('..');
 
-const messages = rule.messages;
-const ruleName = rule.ruleName;
-
-testRule(rule, {
+testRule({
+  plugins: ['./rules/custom-property-no-outside-root/index.js'],
   ruleName,
   config: [true],
 
