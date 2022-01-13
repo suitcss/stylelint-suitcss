@@ -21,5 +21,8 @@
     "no-multi-spaces": 2,
     "no-var": 2,
     "object-shorthand": 2
+  },
+  "globals": {
+    "testRule": "readonly"
   }
 }
