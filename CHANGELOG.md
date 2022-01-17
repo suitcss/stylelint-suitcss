@@ -1,5 +1,9 @@
 ### HEAD
 
+### 5.0.0 (17 January, 2022)
+
+* Update `stylelint` to `14.2.0`
+
 ### 4.0.0 (August 3, 2021)
 
 * Update `stylelint` to `^13.13.1`
